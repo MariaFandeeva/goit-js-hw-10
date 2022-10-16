@@ -39,7 +39,8 @@ function onCountryInput() {
 function markupList(countries) {
   const markup = countries
     .map(({ name, flags }) => {
-      return `<li class = "country-list_item"><img class = "list-item_flag src = "${flags.svg}" alt = "Flag of ${name.official}">
+      return `<li class = "country-list_item">
+      <img class = "list-item_flag src = "${flags.svg}" alt = "Flag of ${name.official}">
         <h2 class = "list-item_name">${name.official}</h2>
         </li>`;
     })
