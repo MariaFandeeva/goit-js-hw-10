@@ -62,7 +62,7 @@ function markupCountry(countries) {
         <li class = "country-info_item"><span class = "info_item-description">Capital:</span>${capital}</li>
         <li class = "country-info_item"><span class = "info_item-description">Population:</span>${population}</li>
         <li class = "country-info_item"><span class = "info_item-description">Languages:</span>${Object.values(
-          languages
+          languages || {}
         ).join(',')}</li>
         </ul>`;
     })
